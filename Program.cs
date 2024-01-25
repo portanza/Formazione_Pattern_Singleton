@@ -20,10 +20,10 @@ namespace SingletonEasy
 				//	return instance; }	
 				//sostituisce le due righe precedenti.
 
-				return instance ??= new MyClass();
+				return instance ??= new MyClass(); //null-coalescing
 			}
 		}
-		private MyClass() { Console.WriteLine("Oggetto creato"); }
+		private MyClass() { Console.WriteLine("Oggetto creato"); } 
 
 
 		public void Metodo()
